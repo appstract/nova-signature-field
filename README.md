@@ -6,8 +6,6 @@
 
 Add a Signature Pad field to Nova.
 
-![dashboard](https://appstract.github.io/nova-signature-field/docs/dashboard.png)
-
 ## Installation
 
 You can install the package via composer:
