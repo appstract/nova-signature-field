@@ -16,7 +16,7 @@ composer require appstract/nova-signature-field
 
 ## Usage
 
-Just add the field to you resource.
+Just add the field to your resource.
 
 ```php
 use Appstract\NovaSignatureField\Signature;
