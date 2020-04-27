@@ -31,7 +31,7 @@ public function fields(Request $request)
 
 It is also possible to pass some options to field:
 
-```
+```php
 // Edit in a modal, so the SignaturePad is bigger
 Signature::make('Drawing')->editInModal()
 
