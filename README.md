@@ -29,6 +29,16 @@ public function fields(Request $request)
 }
 ```
 
+It is also possible to pass some options to field:
+
+```
+// Edit in a modal, so the SignaturePad is bigger
+Signature::make('Drawing')->editInModal()
+
+// Full width image on detail, without label
+Signature::make('Drawing')->fullWidthOnDetail()
+```
+
 ## Contributing
 
 Contributions are welcome, [thanks to y'all](https://github.com/appstract/nova-signature-field/graphs/contributors) :)

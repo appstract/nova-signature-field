@@ -12,4 +12,20 @@ class Signature extends Field
      * @var string
      */
     public $component = 'nova-signature-field';
+
+    /**
+     * Display field in modal.
+     */
+    public function editInModal($editInModal = true)
+    {
+        return $this->withMeta(['editInModal' => $editInModal]);
+    }
+
+    /**
+     * Full width on detail.
+     */
+    public function fullWidthOnDetail($fullWidthOnDetail = true)
+    {
+        return $this->withMeta(['fullWidthOnDetail' => $fullWidthOnDetail]);
+    }
 }

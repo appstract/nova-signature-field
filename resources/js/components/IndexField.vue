@@ -6,7 +6,7 @@
             style="width: 30px; height: auto;"
         >
 
-        <span v-else>-</span>
+        <span v-else>&mdash;</span>
     </div>
 </template>
 
