@@ -121,8 +121,10 @@ export default {
         },
 
         signaturePadHeight() {
-            return this.field.editInModal ? '870px' : '600px';
-        }
+            return this.field.padHeight
+                ? this.field.padHeight
+                : this.field.editInModal ? '870px' : '600px';
+        },
     }
 }
 </script>

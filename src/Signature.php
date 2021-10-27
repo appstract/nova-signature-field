@@ -28,4 +28,12 @@ class Signature extends Field
     {
         return $this->withMeta(['fullWidthOnDetail' => $fullWidthOnDetail]);
     }
+
+    /**
+     * Set the pad height
+     */
+    public function setPadHeight($padHeight = null)
+    {
+        return $this->withMeta(['padHeight' => $padHeight]);
+    }
 }
