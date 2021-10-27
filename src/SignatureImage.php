@@ -52,6 +52,16 @@ class SignatureImage extends Image
         });
     }
 
+    /**
+     * Hydrate the given attribute on the model based on the incoming request.
+     *
+     * @param \Laravel\Nova\Http\Requests\NovaRequest $request
+     * @param string                                  $requestAttribute
+     * @param object                                  $model
+     * @param string                                  $attribute
+     *
+     * @return void
+     */
     protected function fillAttribute(NovaRequest $request, $requestAttribute, $model, $attribute)
     {
         $old_image = $model->{$attribute};
@@ -62,7 +72,7 @@ class SignatureImage extends Image
         $imageName = str_random(25).'.'.'png';
 
         Storage::put($imageName, base64_decode($image));
-        Storage::disk($this->disk)->delete($previousFileName);
+        Storage::disk($this->disk)->delete($old_image);
 
         $model->{$attribute} = $imageName;
     }
