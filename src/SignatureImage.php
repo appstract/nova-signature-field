@@ -3,6 +3,7 @@
 namespace Appstract\NovaSignatureField;
 
 use Laravel\Nova\Fields\Image;
+use Illuminate\Support\Facades\Storage;
 
 class SignatureImage extends Image
 {
